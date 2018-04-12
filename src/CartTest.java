@@ -5,6 +5,7 @@ import org.junit.Test;
 import static junit.framework.TestCase.assertEquals;
 
 public class CartTest {
+
     private Cart cart;
     private Item testApple = new Item("Apple", 60);
     private Item testOrange = new Item("Orange", 25);
@@ -60,6 +61,4 @@ public class CartTest {
         cart.addItem(testApple);
         assertEquals(cart.getItemNames(), "[Orange, Apple]");
     }
-
-
 }
