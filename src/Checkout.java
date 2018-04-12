@@ -38,6 +38,9 @@ public class Checkout {
 
 
         int total = cart.getTotal();
+        total -= cart.addBuyOneGetOneFreeOnApplesDiscount();
+        total -= cart.add3forThePriceOf2OnOrangesDiscount();
+        
         System.out.println(cart.getItemNames() + " => £" + (total/100.0));
     }
 }
